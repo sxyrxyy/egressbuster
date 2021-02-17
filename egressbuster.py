@@ -68,6 +68,8 @@ def start_socket(ipaddr, base_port, shell):
     # 3 seconds is too short if commands are going to be entered
     if shell == "shell":
         timeout = 300
+    else:
+        timeout = 3
 
     # try block to catch exceptions
     try:
